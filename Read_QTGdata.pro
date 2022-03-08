@@ -17,10 +17,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    readthread.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    readthread.h
 
 FORMS += \
     mainwindow.ui
@@ -29,3 +31,11 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    icons.qrc
+
+DISTFILES += \
+    pictures/2b801f7e8d8e8f07761ae4654429ccf.jpg \
+    pictures/4dee03199f1d8095398460ce366c0fe.jpg \
+    pictures/9e42574c71f2c14ea142d72dc5f2f3d.jpg
